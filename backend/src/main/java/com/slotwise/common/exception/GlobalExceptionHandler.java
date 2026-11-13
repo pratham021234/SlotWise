@@ -30,7 +30,8 @@ public class GlobalExceptionHandler {
                 .code(ex.getCode())
                 .message(ex.getMessage())
                 .build();
-        return ResponseEntity.status(ex.getStatus()).body(ApiResponse.error(error));
+        HttpStatus status = ex.getStatus() != null ? ex.getStatus() : HttpStatus.BAD_REQUEST;
+        return ResponseEntity.status(status).body(ApiResponse.error(error));
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

@@ -24,7 +24,11 @@ public final class TenantContextHolder {
     }
 
     public static Optional<UUID> getCurrentTenantId() {
-        return getContext().map(TenantContext::getTenantId);
+        TenantContext context = CONTEXT.get();
+        if (context == null) {
+            return Optional.empty();
+        }
+        return Optional.ofNullable(context.getTenantId());
     }
 
     public static UUID getRequiredTenantId() {
