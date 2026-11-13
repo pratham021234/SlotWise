@@ -135,3 +135,4 @@ void testConcurrentBookingsForSameStaffSlotOnlyOneSucceeds() throws Exception {
     assertEquals(threadCount - 1, conflictCount.get(), "All other concurrent attempts must be rejected");
 }
 ```
+

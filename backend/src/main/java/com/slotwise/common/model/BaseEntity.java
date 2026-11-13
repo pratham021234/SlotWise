@@ -36,3 +36,4 @@ public abstract class BaseEntity {
     @Column(name = "version")
     private Long version;
 }
+

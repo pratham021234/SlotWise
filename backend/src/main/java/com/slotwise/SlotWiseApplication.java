@@ -12,3 +12,4 @@ public class SlotWiseApplication {
         SpringApplication.run(SlotWiseApplication.class, args);
     }
 }
+

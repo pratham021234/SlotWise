@@ -28,3 +28,4 @@ networks:
   slotwise-network:
     name: slotwise-network
     driver: bridge
+

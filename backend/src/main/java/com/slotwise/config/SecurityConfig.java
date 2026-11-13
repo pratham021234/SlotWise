@@ -50,3 +50,4 @@ public class SecurityConfig {
         return authConfig.getAuthenticationManager();
     }
 }
+

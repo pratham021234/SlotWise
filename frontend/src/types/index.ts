@@ -48,3 +48,4 @@ export interface User {
   role: 'PLATFORM_ADMIN' | 'BUSINESS_OWNER' | 'BUSINESS_MANAGER' | 'STAFF' | 'CUSTOMER';
   tenantId?: string;
 }
+

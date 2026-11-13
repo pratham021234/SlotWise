@@ -17,3 +17,4 @@ class SlotWiseApplicationTests {
         assertTrue(true, "Application context bootstrapped without error");
     }
 }
+

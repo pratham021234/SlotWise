@@ -22,3 +22,4 @@ public class HealthResponse {
     private long uptimeSeconds;
     private Map<String, Object> components;
 }
+

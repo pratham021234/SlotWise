@@ -62,3 +62,4 @@ desktop.ini
 # Docker database volume storage
 postgres-data/
 docker/data/
+

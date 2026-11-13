@@ -8,3 +8,4 @@ public class TenantAccessDeniedException extends BusinessException {
         super("TENANT_ACCESS_DENIED", message, HttpStatus.FORBIDDEN);
     }
 }
+

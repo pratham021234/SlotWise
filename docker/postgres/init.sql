@@ -8,3 +8,4 @@ DO $$
 BEGIN
     RAISE NOTICE 'SlotWise PostgreSQL initialized with btree_gist and uuid-ossp extensions.';
 END $$;
+

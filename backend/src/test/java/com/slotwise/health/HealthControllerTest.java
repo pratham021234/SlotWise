@@ -37,3 +37,4 @@ class HealthControllerTest {
                 .andExpect(jsonPath("$.data.components.database.status", is("UP")));
     }
 }
+

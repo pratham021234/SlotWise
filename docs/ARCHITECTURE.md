@@ -130,3 +130,4 @@ SlotWise implements role-based access control with 5 distinct personas:
 - **State Management & Data Fetching:** TanStack Query v5
 - **Styling & UI:** Tailwind CSS, shadcn/ui design tokens, Lucide React
 - **API Documentation:** OpenAPI 3.0 / Swagger UI via Springdoc v2.6.0
+
