@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @RestControllerAdvice
+@SuppressWarnings("null")
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(BusinessException.class)
@@ -31,7 +32,7 @@ public class GlobalExceptionHandler {
                 .message(ex.getMessage())
                 .build();
         HttpStatus status = ex.getStatus() != null ? ex.getStatus() : HttpStatus.BAD_REQUEST;
-        return ResponseEntity.status(status).body(ApiResponse.error(error));
+        return ResponseEntity.status(status.value()).body(ApiResponse.error(error));
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
